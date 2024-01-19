@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact-Rahul Borhade</title>
+
+    <!-- font-awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+    <!-- <script src="./script/script.js"> -->
+    <script src="./script/script.js"></script>
+
+    <!-- custom css file  -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <style>
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+
+        .inputBox {
+            margin-bottom: 15px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- contact section starts -->
+
+    <section class="contact">
+        <h1 class="heading"> contact <span>me</span></h1>
+
+        <div class="row">
+            <div class="info-container" style="margin-top: 5px;">
+                <h1>get in touch</h1>
+
+                <p style="font-size: 18px;">Connect with me! Your inquiries are valuable. I look forward to hearing from
+                    you. Let's create something amazing together. Thank you for reaching out.</p>
+                <div class="box-container">
+                    <div class="box">
+                        <i class="fas fa-map" style="font-size: 40px;"></i>
+                        <div class="info">
+                            <h3 style="font-size: 20px;">address :</h3>
+                            <p style="font-size: large;">Mumbai, india - 400078</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <i class="fas fa-envelope" style="font-size: 40px;"></i>
+                        <div class="info">
+                            <h3 style="font-size: 20px;">email :</h3>
+                            <p style="font-size: large; text-transform: lowercase;">borhaderahul93@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <i class="fas fa-phone" style="font-size: 40px;"></i>
+                        <div class="info">
+                            <h3 style="font-size: 20px;">number :</h3>
+                            <p style="font-size: large;">+91 9324386766</p>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                    <a href="#" class="fas fa-envelope"></a>
+                </div> -->
+            </div>
+            <form id="myForm">
+                <div class="inputBox">
+                    <input id="name" type="text" placeholder="Full Name" required>
+                    <input id="phone" type="tel" placeholder="Phone Number" required>
+                </div>
+
+                <div class="inputBox">
+                    <input id="email" type="email" placeholder="Your Email" required>
+                    <input id="subject" type="text" placeholder="Your Subject" required>
+                </div>
+
+                <textarea name="message" placeholder="Your Message" id="message" cols="30" rows="5" required></textarea>
+
+                <button type="button" onclick="sendEmail()" class="btn" style="margin-left: 25%;">Send Message</button>
+
+            </form>
+        </div>
+    </section>
+
+    <!-- contact section ends -->
+    <script>
+        emailjs.init("f4HH8UTIn-W1Oxx5u");
+        console.log("Email.js initialized");
+    </script>
+    <!-- navbar section starts -->
+    <nav class="navbar">
+        <a href="index.html">
+            <i class="fa fa-home"><span>home</span></i>
+        </a>
+        <a href="about.html">
+            <i class="fa fa-user"><span>about</span></i>
+        </a>
+        <a href="portfolio.html">
+            <i class="fa fa-briefcase"><span>portfolio</span></i>
+        </a>
+        <a href="blogs.html">
+            <i class="fa fa-blog"><span>blogs</span></i>
+        </a>
+        <a href="contact.html">
+            <i class="fa fa-address-book"><span>contact</span></i>
+        </a>
+    </nav>
+    <!-- navbar section Ends -->
+</body>
+
+</html>
